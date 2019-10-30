@@ -6,7 +6,7 @@ import {
   SAVE_PLAYER2_SCORE_ACTION,
 } from '../ReduxTypes';
 
-export default function AppReducer(state, action) {
+const AppReducer = (state, action) => {
   switch (action.type) {
     case SAVE_PLAYER1_ACTION:
       return {...state, player1name: action.payload};
@@ -19,4 +19,5 @@ export default function AppReducer(state, action) {
     default:
       return state ? state : {};
   }
-}
+};
+export default AppReducer;

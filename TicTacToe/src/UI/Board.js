@@ -15,9 +15,6 @@ class Board extends Component {
   constructor() {
     super();
 
-    this.generateRows = this.generateRows.bind(this);
-    this.generateBlocks = this.generateBlocks.bind(this);
-
     this.possible_combinations = [
       [0, 3, 6],
       [1, 4, 7],
@@ -39,7 +36,7 @@ class Board extends Component {
     };
   }
 
-  updateScores(moves) {
+  updateScores = moves => {
     function isInArray(moves, piece, element, index, array) {
       return moves[element] && moves[element] == piece;
     }
@@ -55,7 +52,7 @@ class Board extends Component {
     if (moves.indexOf('') == -1) {
       this.showAlert('No one');
     }
-  }
+  };
 
   showAlert(playerName) {
     Alert.alert(
@@ -95,7 +92,7 @@ class Board extends Component {
     );
   }
 
-  generateRows() {
+  generateRows = () => {
     return this.rows.map((row, index) => {
       return (
         <View style={styles.row} key={index}>
@@ -103,24 +100,24 @@ class Board extends Component {
         </View>
       );
     });
-  }
+  };
 
-  generateBlocks(row, row_index) {
+  generateBlocks = (row, row_index) => {
     return row.map((block, index) => {
       let id = this.ids[row_index][index];
       return (
         <TouchableHighlight
           key={index}
-          onPress={this.onMakeMove.bind(this, row_index, index)}
+          onPress={() => this.onMakeMove(row_index, index)}
           underlayColor={'#CCC'}
           style={styles.block}>
           <Text style={styles.block_text}>{this.state.moves[id]}</Text>
         </TouchableHighlight>
       );
     });
-  }
+  };
 
-  onMakeMove(row_index, index) {
+  onMakeMove = (row_index, index) => {
     let moves = this.state.moves;
     let id = this.ids[row_index][index];
 
@@ -130,9 +127,9 @@ class Board extends Component {
         moves,
         firstPlayer: !this.state.firstPlayer,
       });
-      this.updateScores.call(this, moves);
+      this.updateScores(moves);
     }
-  }
+  };
 }
 
 const styles = StyleSheet.create({
