@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`savePlayer1Name 1`] = `
+Array [
+  Object {
+    "payload": "Test user 1",
+    "type": "SAVE_PLAYER1_ACTION",
+  },
+]
+`;
+
+exports[`savePlayer1Score 1`] = `
+Array [
+  Object {
+    "payload": 1,
+    "type": "SAVE_PLAYER1_SCORE_ACTION",
+  },
+]
+`;
+
+exports[`savePlayer2Name 1`] = `
+Array [
+  Object {
+    "payload": "Test user 2",
+    "type": "SAVE_PLAYER2_ACTION",
+  },
+]
+`;
+
+exports[`savePlayer2Score 1`] = `
+Array [
+  Object {
+    "payload": 2,
+    "type": "SAVE_PLAYER2_SCORE_ACTION",
+  },
+]
+`;

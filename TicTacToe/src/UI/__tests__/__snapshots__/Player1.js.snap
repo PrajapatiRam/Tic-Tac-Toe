@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Player1 renders as expected 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#F5FCee",
+      "flex": 1,
+      "padding": 20,
+    }
+  }
+>
+  <Header
+    title="Welcome"
+  />
+  <Text
+    style={
+      Object {
+        "alignSelf": "center",
+        "fontSize": 20,
+        "fontWeight": "bold",
+        "marginTop": 25,
+      }
+    }
+  >
+    Player 1
+  </Text>
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    placeholder="Your name?"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "borderColor": "black",
+        "borderWidth": 1,
+        "marginVertical": 25,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <Button
+    onPress={[Function]}
+    title="Next"
+  />
+</View>
+`;

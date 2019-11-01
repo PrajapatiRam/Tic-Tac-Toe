@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`INITIAL STATE 1`] = `Object {}`;
+
+exports[`savePlayer1Name:  1`] = `
+Object {
+  "player1name": "Test User 1",
+}
+`;
+
+exports[`savePlayer1Score:  1`] = `
+Object {
+  "player1score": 1,
+}
+`;
+
+exports[`savePlayer2Name:  1`] = `
+Object {
+  "player2name": "Test User 2",
+}
+`;
+
+exports[`savePlayer2Score:  1`] = `
+Object {
+  "player2score": 1,
+}
+`;
