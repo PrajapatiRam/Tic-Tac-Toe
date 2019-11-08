@@ -21,6 +21,7 @@
     "lodash.range": "^3.2.0"
   },
   "devDependencies": {
+    "ws": ">=3.3.1",
     "@babel/core": "^7.6.4",
     "@babel/runtime": "^7.6.3",
     "@react-native-community/eslint-config": "^0.0.5",
